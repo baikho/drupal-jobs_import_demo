@@ -1,4 +1,10 @@
-# Jobs Import Demo
+# Drupal Jobs Import Demo
+
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/baikho/drupal-jobs_import_demo.svg)](https://packagist.org/packages/baikho/drupal-jobs_import_demo)
+[![Total Downloads](https://img.shields.io/packagist/dt/baikho/drupal-jobs_import_demo.svg)](https://packagist.org/packages/baikho/drupal-jobs_import_demo)
+[![MIT Licensed](https://img.shields.io/github/license/baikho/drupal-jobs_import_demo.svg)](https://github.com/baikho/drupal-jobs_import_demo/blob/main/LICENSE.txt)
+[![GitHub issues](https://img.shields.io/github/issues/baikho/drupal-jobs_import_demo.svg)](https://github.com/baikho/drupal-jobs_import_demo/issues)
+[![GitHub stars](https://img.shields.io/github/stars/baikho/drupal-jobs_import_demo.svg)](https://github.com/baikho/drupal-jobs_import_demo/stargazers)
 
 Drupal module demonstrating a **multilingual XML → vacancy** import using core **Migrate**, **Migrate Plus** (`simple_xml` + HTTP URL source), **Migrate Tools** (Drush `--sync` and related commands), **Ultimate Cron** (packaged hourly job), composite source IDs, self-**migration_lookup** for translations, and **`ImportCronService`** (background Drush import from cron).
 
