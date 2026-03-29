@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Drupal\jobs_import_demo\Plugin\migrate\source;
 
 use Drupal\jobs_import_demo\Service\FeedEndpoint;
-use Drupal\migrate\Attribute\MigrateSource;
 use Drupal\migrate\Plugin\MigrationInterface;
 use Drupal\migrate_plus\DataParserPluginInterface;
 use Drupal\migrate_plus\DataParserPluginManager;
@@ -16,8 +15,11 @@ use Drupal\migrate_plus\Plugin\migrate\source\Url;
  *
  * Feed URL is the demo route serving fixtures/job_feed.xml. For protected HTTP feeds,
  * add an `authentication` section to the migration source in YAML (see Migrate Plus).
+ *
+ * @MigrateSource(
+ *   id = "job_feed_url"
+ * )
  */
-#[MigrateSource(id: 'job_feed_url')]
 final class JobFeedUrl extends Url {
 
   public function __construct(
